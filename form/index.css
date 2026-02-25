@@ -1,0 +1,281 @@
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #e6f4ff, #f0f8ff); /* Light sky blue gradient background */
+
+    /* background-color: #f0f4f8; Light grayish background for the body */
+    color: #333; /* Dark text for readability */
+}
+
+/* Targeting the image inside the logo div */
+.logo .img img {
+    transition: transform 1s ease-in-out; /* Smooth transition */
+}
+
+/* When hovered, the logo image will grow */
+.logo .img img:hover {
+    transform: scale(1.2); /* Scale up the image to 120% */
+}
+
+
+.div1 {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    position: fixed;
+    z-index: 10;
+    height: 10%;
+    width: 100%;
+    border-bottom-right-radius: 40px;
+    border-bottom-left-radius: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    border-bottom: 2px solid #333; /* Dark border for separation */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #003366; /* Dark blue background */
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+    border-radius: 5px;
+}
+
+.img img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 50%;
+}
+
+.headtitle h1 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff; /* White text for header */
+}
+
+.signuplogin {
+    display: flex;
+    height: 100%;
+    gap: 20px;
+}
+
+.signup, .login, .logout {
+    padding: 8px 15px;
+    border: 1px solid #fff; /* White border */
+    border-radius: 4px;
+    background-color: #0057a1; /* Blue background for buttons */
+    color: white;
+    cursor: pointer;
+    height: 20px;
+    transition: background-color 0.3s;
+}
+
+.signup:hover, .login:hover, .logout:hover {
+    background-color: #003366; /* Darker blue on hover */
+}
+
+/* Additional Style for Logged-In User Actions */
+/* 
+#addpropertybtn {
+    display: none; 
+}  */
+
+/* For when the user is logged in, show the post property button */
+/* .logged-in #addpropertybtn {
+    display: block;
+} */
+
+.main {
+    margin-top: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 500px;
+    border: 2px solid #ddd;
+    border-top: none;
+    padding: 20px;
+    background-color: #fff; /* White background for the main content */
+}
+
+a {
+    text-decoration: none;
+    color: #003366; /* Dark blue text for links */
+    font-weight: bold;
+}
+
+.info {
+    display: flex;
+    gap: 10px;
+}
+
+.box {
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin: 10px;
+    text-align: center;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.option .box:hover, .seller .box:hover{
+    cursor:pointer;
+    background-color: #ddd;
+}
+.textarea {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.horizontal {
+    display: flex;
+    gap: 10px;
+}
+
+.seller {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 80%;
+    margin: 20px auto;
+}
+
+
+.about {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+.abouttext {
+    width: 45%;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #000;
+}
+
+.image2 {
+    height: 25%;
+    width: 25%;
+}
+
+.image2 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.div4 {
+    width: 100%;
+    height: 150px;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+
+.content{
+    height: fit-content;
+}
+.div5 {
+    width: 100%;
+    height:fit-content;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.card1 {
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+    width: 300px;
+    justify-content: center;
+    align-items: center;
+}
+
+.card1 .image {
+    margin: auto;
+    height: 80%;
+    position: relative;
+    width: 80%;
+    border: 1px solid #333; /* Dark border for card */
+    box-shadow: 10px 10px 10px rgb(144, 147, 241);
+    border-left: none;
+    border-top: none;
+}
+
+.card1 img {
+    position: relative;
+    margin-left: 10%;
+    margin-top: 10%;
+    height: 80%;
+    width: 80%;
+    border: 1px solid #333;
+    border-left: none;
+    border-top: none;
+    box-shadow: 10px 10px 10px rgb(144, 147, 241);
+}
+
+.card1 .description {
+    margin-top: 10%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #02468a; /* Dark blue description background */
+    color: white; /* White text in the description */
+}
+
+footer{
+    top: 0;
+    height: fit-content;
+}
+.footerbox{
+    background-color: #0093E9;
+    background-color: #003366;
+    height: 25px;
+
+    position: relative;
+    justify-items: center;
+    align-items: center;
+    color : white;
+    font-size: 20px;
+} 
